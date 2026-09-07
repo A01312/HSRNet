@@ -3,7 +3,7 @@
 # HSRNet: Human-reconstructed and Dual-semantic Reinforcement Network for Occluded Text-to-Image Person Re-identification
 
 by Li Yuan, Zihang Wu, Zhenfeng Zhao, Cong Wu, Mingfu Xiong, Junyi Zhu, Xiaokang Yang, Bin Sheng*
-
+<img width="1026" height="536" alt="image" src="https://github.com/A01312/HSRNet/blob/main/framework.pdf" />
 
 ## Introduction
 HSRNet is designed for Occluded Text-to-Image Person Re-identification.  
