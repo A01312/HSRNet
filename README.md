@@ -3,7 +3,7 @@
 # HSRNet: Human-reconstructed and Dual-semantic Reinforcement Network for Occluded Text-to-Image Person Re-identification
 
 by Li Yuan, Zihang Wu, Zhenfeng Zhao, Cong Wu, Mingfu Xiong, Junyi Zhu, Xiaokang Yang, Bin Sheng*
-<img width="1026" height="536" alt="image" src="https://github.com/A01312/HSRNet/blob/main/framework.pdf" />
+<img width="1026" height="536" alt="image" src="https://github.com/A01312/HSRNet/blob/main/img/framework.jpg" />
 
 ## Introduction
 HSRNet is designed for Occluded Text-to-Image Person Re-identification.  
@@ -41,8 +41,8 @@ cd HSRNet
     |-- others/
     ~~~
 
-  *  **ICFG-PEDES**
-
+  * **ICFG-PEDES**
+    
     Download the ICFG-PEDES dataset from [here](https://github.com/zifyloo/SSAN)   
 
     Organize them in `./dataset/ICFG-PEDES/` folder as follows:
@@ -80,33 +80,18 @@ cd HSRNet
 Train a model by:
 
 ```bash
-python train.py --dataset llcm --gpu 0
+sh run.sh
 ```
 
-Arguments:
-
-- `--dataset`: which dataset to use, including `llcm`, `sysu`, or `regdb`.
-- `--gpu`: which GPU to use.
-
-## Test
-
-Test a model on LLCM, SYSU-MM01, or RegDB dataset by:
+## Evaluation
 
 ```bash
-python test.py --mode all --tvsearch True --resume 'model_path' --gpu 0 --dataset llcm
+python test.py --config_file "$sub/configs.yaml"
 ```
-
-Arguments:
-
-- `--dataset`: which dataset to use, including `llcm`, `sysu`, or `regdb`.
-- `--mode`: `all` or `indoor`, where `indoor` is only used for the SYSU-MM01 dataset.
-- `--tvsearch`: whether to perform thermal-to-visible search, only used for the RegDB dataset.
-- `--resume`: the saved model path.
-- `--gpu`: which GPU to use.
 
 ## Results
 
-<img width="865" height="841" alt="image" src="https://github.com/user-attachments/assets/dd6a496f-ac88-46d1-99e3-23b1c7aed291" />
+<img width="865" height="841" alt="image" src="https://github.com/A01312/HSRNet/blob/main/img/Results.png" />
 
-<img width="808" height="434" alt="image" src="https://github.com/user-attachments/assets/d301cf44-6dd7-4e7d-aba4-3c399dba2e42" />
+
 
