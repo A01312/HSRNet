@@ -93,5 +93,14 @@ python test.py --config_file "$sub/configs.yaml"
 
 <img width="865" height="841" alt="image" src="https://github.com/A01312/HSRNet/blob/main/img/Results.png" />
 
+## Citation
 
+```bibtex
+@misc{hsrnet,
+  title={HSRNet: Human-reconstructed and Dual-semantic Reinforcement Network for Occluded Text-to-Image Person Re-identification},
+  author={Li Yuan, Zihang Wu, Zhenfeng Zhao, Cong Wu, Mingfu Xiong, Junyi Zhu, Xiaokang Yang, Bin Sheng},
+  year={2026},
+  note={Under review}
+}
+```
 
